@@ -5,7 +5,7 @@ module JSONAPI
       ActionController::Rendering,
       ActionController::Renderers::All,
       ActionController::StrongParameters,
-      Gem::Requirement.new('< 7.1').satisfied_by?(ActionPack.gem_version) ? ActionController::ForceSSL : nil,
+      Gem::Requirement.new('< 7.0').satisfied_by?(ActionPack.gem_version) ? ActionController::ForceSSL : nil,
       ActionController::Instrumentation,
       JSONAPI::ActsAsResourceController
     ].compact.freeze
